@@ -16,34 +16,35 @@ function handleSubmit(event) {
     setMessage(`The weather in ${city} is:` );
 }
 function searchForecast(city) {
-    let apiKey = `3fb188379e6ffcf616e7cdbd010c6434`;
+    let apiKey = "f5ee6fe9739269adb6179e45323cceb3";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(handleResponse); 
 }
+
 function handleResponse(response) {
    setWeather ({
-       temperature: response.data.main.temperature,
+       temperature: response.data.main.temp,
        humidity: response.data.main.humidity,
        wind: response.data.wind.speed,
-       description:response.data.main.description
+       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
    });
+
 }
 return (
     <div>
-    <form className="Weather" onSubmit={handleSubmit}>
+    <form className="Weather">
         <input type="text" placeholder="Type a city" onChange={nameCity}/>
 <p> </p>
-    <button> Let's go </button>
-    </form>
+    <button onClick={handleSubmit}> Let's go </button>
     <Weather
         message={message}
         city={city}
         temperature={weather.temperature}
-        description={weather.description}
         humidity={weather.humidity}
         wind={weather.wind}
         icon={weather.icon}
       />
+       </form>
     </div>
 )
 }

@@ -7,17 +7,17 @@ export default function Weather(props) {
     <h4>{props.message}</h4>
     <ul>
         <li>
-            Temperature:{Math.round(props.temperature)} °C
+            Temperature: {Math.round(props.temperature)} °C
         </li>
         <li>
             Humidity: {props.humidity}%
         </li>
         <li>
-            Wind Speed: {props.wind}
+            Wind Speed: {props.wind} Km/h
         </li>
-        <li>
-            Description: {props.description}
+        <li>  <img src={props.icon} alt={props.description} />
         </li>
+       
     </ul>
  </div>
     )} else {

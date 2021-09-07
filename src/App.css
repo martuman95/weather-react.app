@@ -6,7 +6,7 @@
   border-radius: 10px;
   background-color: #ffdfdf;
   width: 300px;
-  height: 250px;
+  height: fit-content;
 }
 .App {
   background: linear-gradient(
@@ -39,6 +39,7 @@ li {
   list-style: none;
   font-weight: 300;
   text-align: left;
+  font-size: 20px;
 }
 button {
   background-color: rgb(219, 219, 255);
@@ -50,4 +51,7 @@ button {
 button:hover {
   background-color: rgb(236, 134, 250);
   cursor: pointer;
+}
+footer {
+  font-size: 15px;
 }
