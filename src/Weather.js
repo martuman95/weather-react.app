@@ -1,25 +1,26 @@
 import React from "react";
 
-export default function Weather() {
-    return (
+export default function Weather(props) {
+    if (props.temperature) {
+        return (
         <div>
-    <form className="Weather">
-        <input type="text" placeholder="Type a city" />
-<p> </p>
-    <button> Let's go </button>
-    </form>
-    <h4>message</h4>
+    <h4>{props.message}</h4>
     <ul>
         <li>
-            Humidity:
+            Temperature:{Math.round(props.temperature)} °C
         </li>
         <li>
-            Wind Speed:
+            Humidity: {props.humidity}%
         </li>
         <li>
-            Feels Like:
+            Wind Speed: {props.wind}
+        </li>
+        <li>
+            Description: {props.description}
         </li>
     </ul>
  </div>
-    )
+    )} else {
+        return <div />;
+    }
 }

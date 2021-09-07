@@ -1,17 +1,24 @@
 
 import './App.css';
 import SearchEngine from './SearchEngine';
-import Weather from './Weather';
+import { Container } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 function App() {
   return (
+    <Container>
+  <Row>
+    <Col>
     <div className="App">
         <h1>
           Weather App
         </h1>
-        <Weather />
         <SearchEngine />
     </div>
+    </Col>
+  </Row>
+</Container>
   );
 }
 
