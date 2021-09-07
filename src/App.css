@@ -1,11 +1,19 @@
 .App {
   text-align: center;
 }
-.Container {
-  border: solid 2px rebeccapurple;
+.container {
+  border: outset 1px #dbdbff;
+  border-radius: 10px;
+  background-color: #ffdfdf;
+  width: 300px;
+  height: 250px;
 }
 .App {
-  background-color: pink;
+  background: linear-gradient(
+    109.6deg,
+    rgb(120, 212, 234) 11.2%,
+    rgb(216, 226, 253) 72.1%
+  );
   min-height: 100vh;
   display: flex;
   flex-direction: column;

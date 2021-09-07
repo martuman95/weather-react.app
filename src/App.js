@@ -1,25 +1,22 @@
 
 import './App.css';
 import SearchEngine from './SearchEngine';
-import { Container } from 'react-bootstrap';
-import { Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
 
 function App() {
   return (
-    <Container>
-  <Row>
-    <Col>
-    <div className="App">
+  <div className="App">
+      <div className="container">
+        <div className="card outside">
+          <div className="card-body"></div>
         <h1>
           Weather App
         </h1>
         <SearchEngine />
     </div>
-    </Col>
-  </Row>
-</Container>
-  );
+</div>
+</div>
+ 
+);
 }
 
 export default App;
