@@ -17,7 +17,7 @@ function App() {
 </div>
 
  <footer>
-   <a href="" > Open Source Code </a> by Marta Manunta
+   <a href="https://github.com/martuman95/weather-react.app" > Open Source Code </a> by <a href="https://www.instagram.com/martugram_/?hl=it"> Marta Manunta </a>
  </footer>
  </div>
 );

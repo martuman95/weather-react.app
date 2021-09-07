@@ -41,6 +41,12 @@ li {
   text-align: left;
   font-size: 20px;
 }
+a {
+  color: azure;
+}
+a:hover {
+  color: rgb(132, 132, 253);
+}
 button {
   background-color: rgb(219, 219, 255);
   height: 30px;
@@ -49,7 +55,7 @@ button {
   box-shadow: 2px 2px rgb(196, 195, 195);
 }
 button:hover {
-  background-color: rgb(236, 134, 250);
+  background-color: rgb(120, 212, 234);
   cursor: pointer;
 }
 footer {
