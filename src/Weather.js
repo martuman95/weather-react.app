@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import "./Weather.css";
 
 
@@ -8,23 +7,19 @@ export default function Weather(props) {
        <div>
 <div className>
             <form className="Weather">
-        <input type="text" placeholder="Type a city" autoFocus="on"/> 
+        <input type="text" placeholder="Type a city"/> 
     <button className="btn btn primary w-100"> Let's go </button>
        </form>
        </ div>
-        <p>
-           Tuesday 9:41
-       </p>
-       <div>
+            <div className="title">
        <h2>
            London
        </h2>
-        <div>
+         </div>
         <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" />
-  <span><strong>17</strong> °C </span>
-   </div>
-       </div>
+  <span className="temperature">17</span> <span className="degrees">°C</span>
     <ul>
+         <p> Tuesday 9:42 </p> 
         <li>Partly Cloudy </li>
         <li>
             Humidity: 32 %

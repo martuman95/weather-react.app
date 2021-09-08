@@ -1,10 +1,12 @@
 h2 {
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
 }
 
 img {
   float: left;
   margin-left: 20px;
+  height: 64px;
 }
 p {
   font-size: 15px;
@@ -19,6 +21,13 @@ input {
   border-radius: 10px;
   box-shadow: 2px 2px rgb(196, 195, 195);
   margin-left: 20px;
+  margin-top: 20px;
+}
+.temperature {
+  font-weight: bolder;
+}
+.degrees {
+  font-size: 15px;
 }
 li {
   list-style: none;
