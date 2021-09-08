@@ -29,22 +29,5 @@ function handleResponse(response) {
        icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
    });
 
-}
-return (
-    <div>
-    <form className="Weather">
-        <input type="text" placeholder="Type a city" onChange={nameCity}/>
-<p> </p>
-    <button onClick={handleSubmit}> Let's go </button>
-    <Weather
-        message={message}
-        city={city}
-        temperature={weather.temperature}
-        humidity={weather.humidity}
-        wind={weather.wind}
-        icon={weather.icon}
-      />
-       </form>
-    </div>
-)
+}   
 }

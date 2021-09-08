@@ -1,26 +1,38 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import "./Weather.css";
+
 
 export default function Weather(props) {
-    if (props.temperature) {
-        return (
+   return (
+       <div>
+<div className>
+            <form className="Weather">
+        <input type="text" placeholder="Type a city" autoFocus="on"/> 
+    <button className="btn btn primary w-100"> Let's go </button>
+       </form>
+       </ div>
+        <p>
+           Tuesday 9:41
+       </p>
+       <div>
+       <h2>
+           London
+       </h2>
         <div>
-    <h4>{props.message}</h4>
+        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" />
+  <span><strong>17</strong> °C </span>
+   </div>
+       </div>
     <ul>
+        <li>Partly Cloudy </li>
         <li>
-            Temperature: {Math.round(props.temperature)} °C
-        </li>
-        <li>
-            Humidity: {props.humidity}%
+            Humidity: 32 %
         </li>
         <li>
-            Wind Speed: {props.wind} Km/h
+            Wind Speed: 3 Km/h
         </li>
-        <li>  <img src={props.icon} alt={props.description} />
-        </li>
-       
     </ul>
  </div>
-    )} else {
-        return <div />;
-    }
+    )
 }

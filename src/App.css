@@ -1,11 +1,8 @@
-.App {
-  text-align: center;
-}
 .container {
   border: outset 1px #dbdbff;
   border-radius: 10px;
   background-color: #ffdfdf;
-  width: 300px;
+  width: 350px;
   height: fit-content;
 }
 .App {
@@ -27,36 +24,11 @@
   color: #61dafb;
 }
 
-input {
-  border: none;
-  width: 200px;
-  height: 25px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 2px 2px rgb(196, 195, 195);
-}
-li {
-  list-style: none;
-  font-weight: 300;
-  text-align: left;
-  font-size: 20px;
-}
 a {
   color: azure;
 }
 a:hover {
   color: rgb(132, 132, 253);
-}
-button {
-  background-color: rgb(219, 219, 255);
-  height: 30px;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 2px 2px rgb(196, 195, 195);
-}
-button:hover {
-  background-color: rgb(120, 212, 234);
-  cursor: pointer;
 }
 footer {
   font-size: 15px;
