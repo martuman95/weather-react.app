@@ -9,7 +9,7 @@ function App() {
       <div className="container">
         <div className="card outside">
           <div className="card-body">
-        <Weather />
+        <Weather defaultCity="London"/>
         </div>
     </div>
 </div>
