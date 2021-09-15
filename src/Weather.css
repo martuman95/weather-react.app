@@ -2,12 +2,18 @@ h2 {
   text-align: left;
   margin-left: 20px;
   font-weight: 10px;
+  margin-bottom: 0%;
 }
-
-img {
+.description {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 0%;
+  text-transform: capitalize;
+}
+.icon {
   float: left;
   margin-left: 20px;
-  height: 64px;
+  margin-right: 10px;
 }
 p {
   font-size: 15px;
@@ -26,6 +32,7 @@ input {
 }
 .temperature {
   font-weight: bolder;
+  font-size: 30px;
 }
 .degrees {
   font-size: 15px;

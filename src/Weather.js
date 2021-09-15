@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 import "./Weather.css";
 import axios from "axios";
-import FormatDate from "./FormatDate";
+import WeatherIcon from "./WeatherIcon";
 import WeatherInfo from "./WeatherInfo";
 import SearchEngine from "./SearchEngine";
+
 
 
 export default function Weather(props) {
@@ -17,7 +18,8 @@ export default function Weather(props) {
          humidity: response.data.main.humidity,
          wind: response.data.wind.speed,
 city: response.data.name,
-description: response.data.weather[0].description
+description: response.data.weather[0].description,
+icon:  response.data.weather[0].icon
      })
  }
  
@@ -49,8 +51,11 @@ search();
        <h2>
            {weatherData.city}
        </h2>
-         </div>
-        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" />
+         <p className="description">{weatherData.description}</p>
+       </div>
+       <div className="icon">
+       <WeatherIcon code={weatherData.icon}/>
+        </div>
   <span className="temperature">{weatherData.temperature}</span> <span className="degrees">°C</span>
     <ul>
        <WeatherInfo data={weatherData}/>
