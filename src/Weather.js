@@ -3,7 +3,7 @@ import "./Weather.css";
 import axios from "axios";
 import WeatherIcon from "./WeatherIcon";
 import WeatherInfo from "./WeatherInfo";
-import SearchEngine from "./SearchEngine";
+import WeatherTemperature from "./WeatherTemperature";
 
 
 
@@ -55,9 +55,9 @@ search();
        </div>
        <div className="icon">
        <WeatherIcon code={weatherData.icon}/>
-        </div>
-  <span className="temperature">{weatherData.temperature}</span> <span className="degrees">°C</span>
-    <ul>
+        </div> 
+        <WeatherTemperature celsius={weatherData.temperature} />
+     <ul>
        <WeatherInfo data={weatherData}/>
     </ul>
     </div>

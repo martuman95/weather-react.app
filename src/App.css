@@ -26,6 +26,7 @@
 
 a {
   color: azure;
+  text-decoration: none;
 }
 a:hover {
   color: rgb(132, 132, 253);

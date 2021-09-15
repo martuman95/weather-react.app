@@ -33,10 +33,15 @@ input {
 .temperature {
   font-weight: bolder;
   font-size: 30px;
+  margin-right: 10px;
 }
 .degrees {
   font-size: 15px;
 }
+.farh {
+  font-size: 15px;
+}
+
 li {
   list-style: none;
   font-weight: 300;
