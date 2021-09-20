@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./Weather.css";
 import axios from "axios";
+import WeatherForecast from "./WeatherForecast";
 import WeatherIcon from "./WeatherIcon";
 import WeatherInfo from "./WeatherInfo";
 import WeatherTemperature from "./WeatherTemperature";
@@ -62,13 +63,15 @@ function search(){
          <p className="description">{weatherData.description}</p>
        </div>
        <div className="icon">
-       <WeatherIcon code={weatherData.icon}/>
+       <WeatherIcon code={weatherData.icon} size="52"/>
         </div> 
         <WeatherTemperature celsius={weatherData.temperature} />
      <ul>
        <WeatherInfo data={weatherData}/>
     </ul>
+   <WeatherForecast /> 
     </div>
+    
     )
  } else {
    search();

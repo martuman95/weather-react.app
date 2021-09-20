@@ -1,0 +1,20 @@
+.temp-min {
+  opacity: 0.7;
+  margin-left: 5px;
+}
+.forecastIcon {
+  opacity: 0.7;
+}
+.forecastDay {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.forecastTemp {
+  font-size: 15px;
+}
+.col {
+  float: left;
+  margin-right: 10px;
+  margin-left: 20px;
+  text-align: center;
+}
