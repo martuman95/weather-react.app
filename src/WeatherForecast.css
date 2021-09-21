@@ -6,7 +6,7 @@
   opacity: 0.7;
 }
 .forecastDay {
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 5px;
 }
 .forecastTemp {
@@ -14,7 +14,8 @@
 }
 .col {
   float: left;
-  margin-right: 10px;
-  margin-left: 20px;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-bottom: 20px;
   text-align: center;
 }
