@@ -2,7 +2,7 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherForecastDay(props) {
-  function maxTemperature() {
+    function maxTemperature() {
       let temperature = Math.round(props.data.temp.max);
       return `${temperature}°`;
   }
@@ -25,7 +25,7 @@ export default function WeatherForecastDay(props) {
               {day()}
            </div>
            <span className="forecastIcon">
-               <WeatherIcon code={props.data.weather[0].icon} size="32"/>
+               <WeatherIcon code={props.data.weather[0].icon} size="30"/>
            </span>
            <div className="forecastTemp">
                <span className="temp-max">{maxTemperature()}</span>
@@ -33,38 +33,7 @@ export default function WeatherForecastDay(props) {
                <span className="temp-min">{minTemperature()}</span>
            </div>
        </div>
-       <div className="col">
-       <div className="forecastDay">
-               Thu
-           </div><span className="forecastIcon">
-               <WeatherIcon code="01d" size="32" />
-           </span><div className="forecastTemp">
-               <span className="temp-max">19°</span>
-               -
-               <span className="temp-min">10°</span>
            </div>
-           </div>
-           <div className="col">
-           <div className="forecastDay">
-               Thu
-           </div><span className="forecastIcon">
-               <WeatherIcon code="01d" size="32" />
-           </span><div className="forecastTemp">
-               <span className="temp-max">19°</span>
-               -
-               <span className="temp-min">10°</span>
-           </div></div>
-           <div className="col">
-           <div className="forecastDay">
-               Thu
-           </div><span className="forecastIcon">
-               <WeatherIcon code="01d" size="32" />
-           </span><div className="forecastTemp">
-               <span className="temp-max">19°</span>
-               -
-               <span className="temp-min">10°</span>
-          </div>
-           </div></div>   
 
     )
 }
