@@ -1,16 +1,17 @@
 .container {
   border: outset 1px #dbdbff;
   border-radius: 10px;
-  background-color: #ffdfdf;
+  background-image: url(https://cdn.dribbble.com/users/8483639/screenshots/16148575/media/d7d4f955e0bb47e1e3b80ec39eae5039.png?compress=1&resize=1200x900);
   width: 350px;
   height: fit-content;
 }
 .App {
   background: linear-gradient(
-    109.6deg,
-    rgb(120, 212, 234) 11.2%,
-    rgb(216, 226, 253) 72.1%
+    68.1deg,
+    rgb(248, 205, 205) -0.3%,
+    rgb(149, 170, 211) 100.7%
   );
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;

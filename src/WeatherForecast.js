@@ -1,32 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./WeatherForecast.css";
 import WeatherForecastDay from "./WeatherForecastDay";
 import axios from "axios";
+import { cleanup } from "@testing-library/react";
 
 export default function WeatherForecast(props){
  let [loaded, setLoaded] = useState(false);
  let [forecast, loadForecast] = useState(null);
+
+useEffect(() => {
+ setLoaded(false);
+}, [props.coord]);
+
     function handleResponse(response){
 loadForecast(response.data.daily);
 setLoaded(true);
     }
+
     if (loaded) {
 return (
        <div className="WeatherForecast">
            <div className="row">
-<div className="col">
-   <WeatherForecastDay data={forecast[0]}/>
-</div> 
-<div className="col">
-   <WeatherForecastDay data={forecast[1]}/>
-</div> 
-<div className="col">
-   <WeatherForecastDay data={forecast[2]}/>
- </div>
- <div className="col">
-   <WeatherForecastDay data={forecast[3]}/>
- </div>
-      </div>   </div>    
+               {forecast.map(function(dailyForecast, index){
+                   if(index < 4) {
+                   return(
+                    <div className="col" key="index">
+   <WeatherForecastDay data={dailyForecast}/>
+                    </div>    
+                   )
+                   }})}
+      </div>  
+        </div>    
 );
     } else { 
         let apiKey = "f5ee6fe9739269adb6179e45323cceb3";
